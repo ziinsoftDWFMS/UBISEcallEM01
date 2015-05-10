@@ -14,6 +14,11 @@
 		57E4F96D1AFF7EF9003F4ABB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57E4F96C1AFF7EF9003F4ABB /* Images.xcassets */; };
 		57E4F9701AFF7EF9003F4ABB /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 57E4F96E1AFF7EF9003F4ABB /* LaunchScreen.xib */; };
 		57E4F97C1AFF7EF9003F4ABB /* UBISEcallEM01Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 57E4F97B1AFF7EF9003F4ABB /* UBISEcallEM01Tests.m */; };
+		57E4F9871AFF80FB003F4ABB /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 57E4F9861AFF80FB003F4ABB /* icon.png */; };
+		57E4F9891AFF8106003F4ABB /* ic_emergency.png in Resources */ = {isa = PBXBuildFile; fileRef = 57E4F9881AFF8106003F4ABB /* ic_emergency.png */; };
+		57E4F98C1AFF812F003F4ABB /* CAllServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 57E4F98B1AFF812F003F4ABB /* CAllServer.m */; };
+		57E4F98F1AFF813C003F4ABB /* DwfmsSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 57E4F98E1AFF813C003F4ABB /* DwfmsSegue.m */; };
+		57E4F9921AFF8149003F4ABB /* IdentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 57E4F9911AFF8149003F4ABB /* IdentViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +45,14 @@
 		57E4F9751AFF7EF9003F4ABB /* UBISEcallEM01Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UBISEcallEM01Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		57E4F97A1AFF7EF9003F4ABB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		57E4F97B1AFF7EF9003F4ABB /* UBISEcallEM01Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UBISEcallEM01Tests.m; sourceTree = "<group>"; };
+		57E4F9861AFF80FB003F4ABB /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		57E4F9881AFF8106003F4ABB /* ic_emergency.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_emergency.png; sourceTree = "<group>"; };
+		57E4F98A1AFF8129003F4ABB /* CAllServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAllServer.h; sourceTree = "<group>"; };
+		57E4F98B1AFF812F003F4ABB /* CAllServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CAllServer.m; sourceTree = "<group>"; };
+		57E4F98D1AFF8136003F4ABB /* DwfmsSegue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DwfmsSegue.h; sourceTree = "<group>"; };
+		57E4F98E1AFF813C003F4ABB /* DwfmsSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DwfmsSegue.m; sourceTree = "<group>"; };
+		57E4F9901AFF8144003F4ABB /* IdentViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IdentViewController.h; sourceTree = "<group>"; };
+		57E4F9911AFF8149003F4ABB /* IdentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IdentViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,10 +94,17 @@
 		57E4F95E1AFF7EF9003F4ABB /* UBISEcallEM01 */ = {
 			isa = PBXGroup;
 			children = (
+				57E4F9851AFF80E2003F4ABB /* image */,
 				57E4F9631AFF7EF9003F4ABB /* AppDelegate.h */,
 				57E4F9641AFF7EF9003F4ABB /* AppDelegate.m */,
 				57E4F9661AFF7EF9003F4ABB /* ViewController.h */,
 				57E4F9671AFF7EF9003F4ABB /* ViewController.m */,
+				57E4F98A1AFF8129003F4ABB /* CAllServer.h */,
+				57E4F98B1AFF812F003F4ABB /* CAllServer.m */,
+				57E4F98D1AFF8136003F4ABB /* DwfmsSegue.h */,
+				57E4F98E1AFF813C003F4ABB /* DwfmsSegue.m */,
+				57E4F9901AFF8144003F4ABB /* IdentViewController.h */,
+				57E4F9911AFF8149003F4ABB /* IdentViewController.m */,
 				57E4F9691AFF7EF9003F4ABB /* Main.storyboard */,
 				57E4F96C1AFF7EF9003F4ABB /* Images.xcassets */,
 				57E4F96E1AFF7EF9003F4ABB /* LaunchScreen.xib */,
@@ -117,6 +137,15 @@
 				57E4F97A1AFF7EF9003F4ABB /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		57E4F9851AFF80E2003F4ABB /* image */ = {
+			isa = PBXGroup;
+			children = (
+				57E4F9881AFF8106003F4ABB /* ic_emergency.png */,
+				57E4F9861AFF80FB003F4ABB /* icon.png */,
+			);
+			name = image;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,7 +229,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				57E4F9891AFF8106003F4ABB /* ic_emergency.png in Resources */,
 				57E4F96B1AFF7EF9003F4ABB /* Main.storyboard in Resources */,
+				57E4F9871AFF80FB003F4ABB /* icon.png in Resources */,
 				57E4F9701AFF7EF9003F4ABB /* LaunchScreen.xib in Resources */,
 				57E4F96D1AFF7EF9003F4ABB /* Images.xcassets in Resources */,
 			);
@@ -221,7 +252,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				57E4F9681AFF7EF9003F4ABB /* ViewController.m in Sources */,
+				57E4F9921AFF8149003F4ABB /* IdentViewController.m in Sources */,
+				57E4F98F1AFF813C003F4ABB /* DwfmsSegue.m in Sources */,
 				57E4F9651AFF7EF9003F4ABB /* AppDelegate.m in Sources */,
+				57E4F98C1AFF812F003F4ABB /* CAllServer.m in Sources */,
 				57E4F9621AFF7EF9003F4ABB /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -351,6 +385,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = UBISEcallEM01/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
@@ -364,6 +399,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = UBISEcallEM01/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
