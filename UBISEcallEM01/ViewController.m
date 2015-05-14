@@ -5,18 +5,22 @@
 #import <SystemConfiguration/SystemConfiguration.h>
 #import <netinet/in.h>
 
-
 @interface ViewController ()
 
 @end
 
 @implementation ViewController
+
+
 BOOL navigateYN;
 NSString* idForVendor;
+
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
     //network check
     
     NSLog(@"Connection ststus : %@", [self connectedToNetwork] ? @"YES" : @"NO");
@@ -24,9 +28,13 @@ NSString* idForVendor;
     //나중에 적용하자..Message Box
     //---------------------------------------------------------
     
+    
+    
+    
+    
     _locationTxt.delegate = self;
     UIDevice *device = [UIDevice currentDevice];
-    NSString* idForVendor = [device.identifierForVendor UUIDString];
+    idForVendor = [device.identifierForVendor UUIDString];
     
     NSLog(@">>>>>%@",idForVendor);
     //서버에서 결과 리턴받기
@@ -38,6 +46,7 @@ NSString* idForVendor;
     
     [param setValue:@"S" forKey:@"gubun"];
     [param setValue:@"EM01" forKey:@"code"];
+    
     [param setObject:idForVendor forKey:@"deviceId"];
     
     //deviceId
@@ -82,28 +91,27 @@ NSString* idForVendor;
         
         // [self presentModalViewController:[self.storyboard instantiateViewControllerWithIdentifier:@"IdentView"] animated:YES];
         
-       // UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-        //UIViewController *identViewController = [storyboard /instantiateViewControllerWithIdentifier:@"IdentViewController"];
+        //UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+        //UIViewController *identViewController = [storyboard instantiateViewControllerWithIdentifier:@"IdentViewController"];
         
-     //   self.navigationController.modalPresentationStyle = UIModalPresentationCurrentContext;
-      //  [self presentViewController:identViewController animated:NO completion:nil];
+        //self.navigationController.modalPresentationStyle = UIModalPresentationCurrentContext;
+        //[self presentViewController:identViewController animated:NO completion:nil];
         
         //  identViewController.view.alpha = 0;
         //  [UIView animateWithDuration:0.5 animations:^{
         //      identViewController.view.alpha = 1;
         //  } completion:^(BOOL finished) {
         //         }];
-        
         navigateYN = YES;
+        
     }else{
         
         
         
-        navigateYN = NO;
-
+        
         
         NSLog(@">>4566>>>1234%@",idForVendor);
-        
+        navigateYN = NO;
     }
     
 }
@@ -122,6 +130,7 @@ NSString* idForVendor;
     }
 }
 
+
 - (IBAction)click:(id)sender {
     UIDevice *device = [UIDevice currentDevice];
     NSString* idForVendor = [device.identifierForVendor UUIDString];
@@ -132,6 +141,9 @@ NSString* idForVendor;
     [param setValue:@"S" forKey:@"gubun"];
     [param setObject:idForVendor forKey:@"deviceId"];
     [param setValue:self.locationTxt.text forKey:@"location"];
+    
+    self.locationTxt.text = @"";
+    
     
     NSString* str = [res stringWithUrl:@"emcInfoPush.do" VAL:param];
     
@@ -200,8 +212,5 @@ NSString* idForVendor;
         
     }
 }
-
-
-
 
 @end
