@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		57E27D811B0527C0000046EA /* ic_emergency.png in Resources */ = {isa = PBXBuildFile; fileRef = 57E27D801B0527C0000046EA /* ic_emergency.png */; };
+		57E27D831B0527E9000046EA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57E27D821B0527E9000046EA /* CoreGraphics.framework */; };
+		57E27D851B0527F1000046EA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57E27D841B0527F1000046EA /* Foundation.framework */; };
+		57E27D871B0527FB000046EA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57E27D861B0527FB000046EA /* UIKit.framework */; };
+		57E27D891B052809000046EA /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57E27D881B052809000046EA /* SystemConfiguration.framework */; };
+		57E27D8B1B052B76000046EA /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 57E27D8A1B052B76000046EA /* icon.png */; };
 		57E4F9621AFF7EF9003F4ABB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 57E4F9611AFF7EF9003F4ABB /* main.m */; };
 		57E4F9651AFF7EF9003F4ABB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 57E4F9641AFF7EF9003F4ABB /* AppDelegate.m */; };
 		57E4F9681AFF7EF9003F4ABB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 57E4F9671AFF7EF9003F4ABB /* ViewController.m */; };
@@ -14,8 +20,8 @@
 		57E4F96D1AFF7EF9003F4ABB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57E4F96C1AFF7EF9003F4ABB /* Images.xcassets */; };
 		57E4F9701AFF7EF9003F4ABB /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 57E4F96E1AFF7EF9003F4ABB /* LaunchScreen.xib */; };
 		57E4F97C1AFF7EF9003F4ABB /* UBISEcallEM01Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 57E4F97B1AFF7EF9003F4ABB /* UBISEcallEM01Tests.m */; };
-		57E4F9871AFF80FB003F4ABB /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 57E4F9861AFF80FB003F4ABB /* icon.png */; };
-		57E4F9891AFF8106003F4ABB /* ic_emergency.png in Resources */ = {isa = PBXBuildFile; fileRef = 57E4F9881AFF8106003F4ABB /* ic_emergency.png */; };
+		57E4F9871AFF80FB003F4ABB /* icon_bak.png in Resources */ = {isa = PBXBuildFile; fileRef = 57E4F9861AFF80FB003F4ABB /* icon_bak.png */; };
+		57E4F9891AFF8106003F4ABB /* ic_emergency_bak.png in Resources */ = {isa = PBXBuildFile; fileRef = 57E4F9881AFF8106003F4ABB /* ic_emergency_bak.png */; };
 		57E4F98C1AFF812F003F4ABB /* CAllServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 57E4F98B1AFF812F003F4ABB /* CAllServer.m */; };
 		57E4F98F1AFF813C003F4ABB /* DwfmsSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 57E4F98E1AFF813C003F4ABB /* DwfmsSegue.m */; };
 		57E4F9921AFF8149003F4ABB /* IdentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 57E4F9911AFF8149003F4ABB /* IdentViewController.m */; };
@@ -32,6 +38,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		57E27D801B0527C0000046EA /* ic_emergency.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_emergency.png; sourceTree = "<group>"; };
+		57E27D821B0527E9000046EA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CoreGraphics.framework; sourceTree = "<group>"; };
+		57E27D841B0527F1000046EA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Foundation.framework; sourceTree = "<group>"; };
+		57E27D861B0527FB000046EA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UIKit.framework; sourceTree = "<group>"; };
+		57E27D881B052809000046EA /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SystemConfiguration.framework; sourceTree = "<group>"; };
+		57E27D8A1B052B76000046EA /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		57E4F95C1AFF7EF9003F4ABB /* UBISEcallEM01.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UBISEcallEM01.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		57E4F9601AFF7EF9003F4ABB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		57E4F9611AFF7EF9003F4ABB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -45,8 +57,8 @@
 		57E4F9751AFF7EF9003F4ABB /* UBISEcallEM01Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UBISEcallEM01Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		57E4F97A1AFF7EF9003F4ABB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		57E4F97B1AFF7EF9003F4ABB /* UBISEcallEM01Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UBISEcallEM01Tests.m; sourceTree = "<group>"; };
-		57E4F9861AFF80FB003F4ABB /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
-		57E4F9881AFF8106003F4ABB /* ic_emergency.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_emergency.png; sourceTree = "<group>"; };
+		57E4F9861AFF80FB003F4ABB /* icon_bak.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_bak.png; sourceTree = "<group>"; };
+		57E4F9881AFF8106003F4ABB /* ic_emergency_bak.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_emergency_bak.png; sourceTree = "<group>"; };
 		57E4F98A1AFF8129003F4ABB /* CAllServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAllServer.h; sourceTree = "<group>"; };
 		57E4F98B1AFF812F003F4ABB /* CAllServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CAllServer.m; sourceTree = "<group>"; };
 		57E4F98D1AFF8136003F4ABB /* DwfmsSegue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DwfmsSegue.h; sourceTree = "<group>"; };
@@ -60,6 +72,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				57E27D831B0527E9000046EA /* CoreGraphics.framework in Frameworks */,
+				57E27D871B0527FB000046EA /* UIKit.framework in Frameworks */,
+				57E27D891B052809000046EA /* SystemConfiguration.framework in Frameworks */,
+				57E27D851B0527F1000046EA /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +92,10 @@
 		57E4F9531AFF7EF9003F4ABB = {
 			isa = PBXGroup;
 			children = (
+				57E27D881B052809000046EA /* SystemConfiguration.framework */,
+				57E27D861B0527FB000046EA /* UIKit.framework */,
+				57E27D841B0527F1000046EA /* Foundation.framework */,
+				57E27D821B0527E9000046EA /* CoreGraphics.framework */,
 				57E4F95E1AFF7EF9003F4ABB /* UBISEcallEM01 */,
 				57E4F9781AFF7EF9003F4ABB /* UBISEcallEM01Tests */,
 				57E4F95D1AFF7EF9003F4ABB /* Products */,
@@ -142,8 +162,10 @@
 		57E4F9851AFF80E2003F4ABB /* image */ = {
 			isa = PBXGroup;
 			children = (
-				57E4F9881AFF8106003F4ABB /* ic_emergency.png */,
-				57E4F9861AFF80FB003F4ABB /* icon.png */,
+				57E27D8A1B052B76000046EA /* icon.png */,
+				57E27D801B0527C0000046EA /* ic_emergency.png */,
+				57E4F9881AFF8106003F4ABB /* ic_emergency_bak.png */,
+				57E4F9861AFF80FB003F4ABB /* icon_bak.png */,
 			);
 			name = image;
 			sourceTree = "<group>";
@@ -229,11 +251,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				57E4F9891AFF8106003F4ABB /* ic_emergency.png in Resources */,
+				57E4F9891AFF8106003F4ABB /* ic_emergency_bak.png in Resources */,
+				57E27D8B1B052B76000046EA /* icon.png in Resources */,
 				57E4F96B1AFF7EF9003F4ABB /* Main.storyboard in Resources */,
-				57E4F9871AFF80FB003F4ABB /* icon.png in Resources */,
+				57E4F9871AFF80FB003F4ABB /* icon_bak.png in Resources */,
 				57E4F9701AFF7EF9003F4ABB /* LaunchScreen.xib in Resources */,
 				57E4F96D1AFF7EF9003F4ABB /* Images.xcassets in Resources */,
+				57E27D811B0527C0000046EA /* ic_emergency.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -384,6 +408,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = UBISEcallEM01/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -398,6 +426,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = UBISEcallEM01/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
